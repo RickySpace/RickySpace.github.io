@@ -4,6 +4,12 @@
 
 body {
     background-color: #ebebeb;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 h2 {
@@ -16,6 +22,11 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
+#smallTxt {
+    font-size: 10px;
+}
+
 #tbl {
     transform: scale(1.13);
     border-radius: 15px;
@@ -39,6 +50,16 @@ td {
 }
 .selected {
     color: green;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #303030;
+    color: white;
+    text-align: center;
 }
 
 @media screen and (max-width: 599px) {
